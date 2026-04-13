@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Our Work | Avare Media - Portfolio & Case Studies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1e2b; }
+    :root { --primary-dark: #0a0c15; --primary-accent: #c2a144; --primary-accent-hover: #aa8a3a; --gray-bg: #f8f9fc; --card-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); }
+    h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; }
+    .section-title { position: relative; font-size: 2.2rem; font-weight: 800; margin-bottom: 1.2rem; }
+    .section-title:after { content: ''; display: block; width: 70px; height: 4px; background: var(--primary-accent); margin-top: 12px; border-radius: 4px; }
+    .text-gold { color: var(--primary-accent); }
+    .bg-gold-soft { background: rgba(194, 161, 68, 0.08); }
+    .btn-gold { background: var(--primary-accent); color: #0a0c15; font-weight: 600; padding: 0.7rem 1.8rem; border-radius: 40px; transition: all 0.2s ease; border: none; }
+    .btn-gold:hover { background: var(--primary-accent-hover); color: #ffffff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(194,161,68,0.2); }
+    .navbar { background: rgba(10, 12, 21, 0.96); backdrop-filter: blur(8px); padding: 1rem 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); z-index: 1030; }
+    .navbar-brand { font-weight: 800; font-size: 1.8rem; letter-spacing: -0.5px; color: white !important; }
+    .navbar-brand span { color: var(--primary-accent); }
+    .nav-link { color: #f0f0f0 !important; font-weight: 500; margin: 0 0.5rem; transition: 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-accent) !important; }
+    .page-header { background: linear-gradient(135deg, #0a0c15 0%, #1a1e2b 100%); padding: 120px 0 60px; color: white; }
+    .case-study-card { background: white; border-radius: 24px; padding: 1.5rem; transition: all 0.3s; height: 100%; border: 1px solid #edf0f5; }
+    .case-study-card:hover { transform: translateY(-8px); box-shadow: var(--card-shadow); border-color: var(--primary-accent); }
+    .case-study-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 16px; margin-bottom: 1.2rem; }
+    .category-tag { background: var(--primary-accent); color: #0a0c15; padding: 4px 12px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; display: inline-block; }
+    .filter-btn { background: transparent; border: 1px solid #ddd; padding: 0.5rem 1.5rem; border-radius: 40px; margin: 0.25rem; transition: all 0.2s; font-weight: 500; }
+    .filter-btn:hover, .filter-btn.active { background: var(--primary-accent); color: #0a0c15; border-color: var(--primary-accent); }
+    .stats-banner { background: var(--primary-dark); border-radius: 30px; padding: 3rem; }
+    .stat-item { text-align: center; }
+    .stat-value { font-size: 3rem; font-weight: 800; color: var(--primary-accent); }
+    footer { background: #0a0c15; color: #ccc; padding: 3rem 0 2rem; }
+    
+    @media (max-width: 992px) {
+      .navbar-nav { background: rgba(10,12,21,0.96); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: 24px; margin-top: 0.5rem; }
+    }
+    @media (max-width: 768px) {
+      .section-title { font-size: 1.8rem; }
+      .page-header { padding: 100px 0 40px; }
+      .page-header h1 { font-size: 2.2rem; }
+      .case-study-card img { height: 180px; }
+      .stats-banner { padding: 2rem 1rem; }
+      .stat-value { font-size: 2.2rem; }
+    }
+    @media (max-width: 576px) {
+      .page-header h1 { font-size: 1.8rem; }
+      .filter-btn { padding: 0.4rem 1rem; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AVARE<span>MEDIA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+        <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <span class="text-gold fw-semibold" data-aos="fade-up">success stories</span>
+    <h1 class="display-4 fw-bold mt-3" data-aos="fade-up" data-aos-delay="100">Our Work & Case Studies</h1>
+    <p class="lead mt-3 opacity-75" data-aos="fade-up" data-aos-delay="200">Our portfolio reflects creativity, quality, and impact across multiple industries</p>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<section class="py-4 border-bottom">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="digital">Digital Campaigns</button>
+      <button class="filter-btn" data-filter="video">Video Production</button>
+      <button class="filter-btn" data-filter="outdoor">Outdoor Media</button>
+      <button class="filter-btn" data-filter="app">App/Web</button>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Case Study 1 -->
+      <div class="col-md-6" data-aos="fade-up" data-category="branding digital">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Property Expo">
+          <span class="category-tag mb-3">Branding & Digital</span>
+          <h4>Lifestyle Property Expo – Complete Brand & Campaign Execution</h4>
+          <p class="small text-muted">Avare Media managed complete branding, marketing, and visual communication. Delivered full 360° branding from creative design to digital promotion and on-ground execution.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">Strong awareness, high visitor engagement, and professional exhibition environment.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Case Study 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="branding outdoor digital">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Furniture Expo">
+          <span class="category-tag mb-3">360° Campaign</span>
+          <h4>Pakistan Lifestyle Furniture Expo – Nationwide Campaign (6+ Years)</h4>
+          <p class="small text-muted">Creative & media partner for 32 cities. Complete campaign design, digital content, social media, on-ground branding: flyers, streamers, media walls.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">Consistent brand presence across all cities, building trust year after year.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Case Study 3 -->
+      <div class="col-md-6" data-aos="fade-up" data-category="branding digital outdoor">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="My Lifestyle Expo">
+          <span class="category-tag mb-3">Brand Activation</span>
+          <h4>My Lifestyle Expo – 360° Brand Activation</h4>
+          <p class="small text-muted">End-to-end branding and campaign solution. Unified visual identity across social media and physical displays.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">Generated strong awareness, high engagement, and powerful on-ground presence.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Case Study 4 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="app">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eshal App">
+          <span class="category-tag mb-3">App UI/UX</span>
+          <h4>Eshal Home Services – Mobile App UI/UX Design</h4>
+          <p class="small text-muted">Complete UI/UX system: app interface, user journey mapping, membership flow, service booking system.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">Clean, modern interface reducing user effort and increasing trust.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Case Study 5 -->
+      <div class="col-md-6" data-aos="fade-up" data-category="video">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Commercial Production">
+          <span class="category-tag mb-3">Video Production</span>
+          <h4>Retail Chain – TV Commercial Campaign</h4>
+          <p class="small text-muted">Full production of TV commercials for nationwide retail chain. Scriptwriting, casting, production, and post-production.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">30% increase in brand recall and significant footfall increase.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Case Study 6 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="outdoor">
+        <div class="case-study-card">
+          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Outdoor Campaign">
+          <span class="category-tag mb-3">Outdoor Media</span>
+          <h4>Hospitality Group – Nationwide Billboard Campaign</h4>
+          <p class="small text-muted">Strategic billboard placement across 15 major cities. Complete campaign management and installation.</p>
+          <div class="mt-3">
+            <strong class="small text-gold">Results:</strong>
+            <p class="small mb-0">Widespread brand visibility and 25% increase in inquiries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BANNER -->
+<section class="py-5">
+  <div class="container">
+    <div class="stats-banner text-white" data-aos="fade-up">
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <div class="stat-value">500+</div>
+            <p class="mb-0 opacity-75">Projects Completed</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <div class="stat-value">50+</div>
+            <p class="mb-0 opacity-75">Happy Clients</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <div class="stat-value">32</div>
+            <p class="mb-0 opacity-75">Cities Covered</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-item">
+            <div class="stat-value">98%</div>
+            <p class="mb-0 opacity-75">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5 bg-gold-soft">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">client love</span>
+      <h2 class="section-title text-center d-inline-block">What Our Clients Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <div class="text-gold mb-3">★★★★★</div>
+          <p class="mb-4">"Avare Media transformed our brand presence completely. Their outdoor campaign brought incredible visibility to our expo."</p>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-user-circle fs-1 text-gold me-3"></i>
+            <div><strong>Imran Malik</strong><br><small class="text-muted">Director, Lifestyle Expo</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <div class="text-gold mb-3">★★★★★</div>
+          <p class="mb-4">"The app design exceeded our expectations. User engagement has increased significantly since launch."</p>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-user-circle fs-1 text-gold me-3"></i>
+            <div><strong>Sara Ahmed</strong><br><small class="text-muted">CEO, Eshal Services</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <div class="text-gold mb-3">★★★★★</div>
+          <p class="mb-4">"Professional, creative, and reliable. They've been our creative partner for 6 years across all our events."</p>
+          <div class="d-flex align-items-center">
+            <i class="fas fa-user-circle fs-1 text-gold me-3"></i>
+            <div><strong>Omar Farooq</strong><br><small class="text-muted">Marketing Head, Furniture Expo</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Ready to create your success story?</h2>
+    <p class="lead mb-4 opacity-75" data-aos="fade-up" data-aos-delay="100">Let's discuss how we can elevate your brand with our creative expertise</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" data-aos="fade-up" data-aos-delay="200">Start your project <i class="fas fa-arrow-right ms-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-5"><a class="navbar-brand text-white" href="index.html">AVARE<span class="text-gold">MEDIA</span></a><p class="small mt-3 opacity-75">We craft powerful visuals — from digital design to outdoor media — that elevate your brand presence.</p></div>
+      <div class="col-md-3"><h5 class="fw-bold text-white">Quick Links</h5><ul class="list-unstyled small"><li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li><li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li><li><a href="work.html" class="text-white-50 text-decoration-none">Our Work</a></li><li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li></ul></div>
+      <div class="col-md-4"><h5 class="fw-bold text-white">Contact</h5><p><i class="fas fa-phone-alt text-gold me-2"></i> +92 334 9883999</p><p><i class="fas fa-envelope text-gold me-2"></i> avaremedia@gmail.com</p><div class="mt-3"><i class="fab fa-instagram me-3 fa-lg text-gold"></i><i class="fab fa-linkedin me-3 fa-lg text-gold"></i><i class="fab fa-facebook fa-lg text-gold"></i></div></div>
+    </div>
+    <hr class="mt-4 opacity-25">
+    <div class="text-center small opacity-50">© 2025 Avare Media — Elevate your brand. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true });
+  
+  // Simple filter functionality
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      document.querySelectorAll('[data-category]').forEach(item => {
+        if (filter === 'all' || item.dataset.category.includes(filter)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

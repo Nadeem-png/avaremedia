@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Our Services | Avare Media - Design, Campaigns & Outdoor Media</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1e2b; }
+    :root { --primary-dark: #0a0c15; --primary-accent: #c2a144; --primary-accent-hover: #aa8a3a; --gray-bg: #f8f9fc; --card-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); }
+    h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; }
+    .section-title { position: relative; font-size: 2.2rem; font-weight: 800; margin-bottom: 1.2rem; }
+    .section-title:after { content: ''; display: block; width: 70px; height: 4px; background: var(--primary-accent); margin-top: 12px; border-radius: 4px; }
+    .text-gold { color: var(--primary-accent); }
+    .bg-gold-soft { background: rgba(194, 161, 68, 0.08); }
+    .btn-gold { background: var(--primary-accent); color: #0a0c15; font-weight: 600; padding: 0.7rem 1.8rem; border-radius: 40px; transition: all 0.2s ease; border: none; }
+    .btn-gold:hover { background: var(--primary-accent-hover); color: #ffffff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(194,161,68,0.2); }
+    .navbar { background: rgba(10, 12, 21, 0.96); backdrop-filter: blur(8px); padding: 1rem 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); z-index: 1030; }
+    .navbar-brand { font-weight: 800; font-size: 1.8rem; letter-spacing: -0.5px; color: white !important; }
+    .navbar-brand span { color: var(--primary-accent); }
+    .nav-link { color: #f0f0f0 !important; font-weight: 500; margin: 0 0.5rem; transition: 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-accent) !important; }
+    .page-header { background: linear-gradient(135deg, #0a0c15 0%, #1a1e2b 100%); padding: 120px 0 60px; color: white; }
+    .service-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; height: 100%; transition: all 0.25s ease; box-shadow: var(--card-shadow); border: 1px solid #f0f0f0; }
+    .service-card:hover { transform: translateY(-8px); border-color: var(--primary-accent); box-shadow: 0 25px 40px -16px rgba(0,0,0,0.12); }
+    .service-icon { font-size: 2.8rem; color: var(--primary-accent); margin-bottom: 1.5rem; }
+    .service-feature-list { list-style: none; padding-left: 0; }
+    .service-feature-list li { padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0; }
+    .service-feature-list li:last-child { border-bottom: none; }
+    .service-feature-list i { color: var(--primary-accent); margin-right: 10px; font-size: 0.9rem; }
+    .package-card { background: white; border-radius: 24px; padding: 2.5rem 2rem; height: 100%; box-shadow: var(--card-shadow); position: relative; transition: all 0.3s; }
+    .package-card.featured { border: 2px solid var(--primary-accent); transform: scale(1.02); }
+    .package-card:hover { transform: translateY(-8px); }
+    .package-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-accent); color: #0a0c15; padding: 5px 20px; border-radius: 40px; font-weight: 600; font-size: 0.85rem; }
+    .package-price { font-size: 2.5rem; font-weight: 800; color: var(--primary-dark); }
+    footer { background: #0a0c15; color: #ccc; padding: 3rem 0 2rem; }
+    
+    @media (max-width: 992px) {
+      .navbar-nav { background: rgba(10,12,21,0.96); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: 24px; margin-top: 0.5rem; }
+    }
+    @media (max-width: 768px) {
+      .section-title { font-size: 1.8rem; }
+      .page-header { padding: 100px 0 40px; }
+      .page-header h1 { font-size: 2.2rem; }
+      .service-card { padding: 1.5rem; }
+    }
+    @media (max-width: 576px) {
+      .page-header h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AVARE<span>MEDIA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <span class="text-gold fw-semibold" data-aos="fade-up">what we deliver</span>
+    <h1 class="display-4 fw-bold mt-3" data-aos="fade-up" data-aos-delay="100">Our Services</h1>
+    <p class="lead mt-3 opacity-75" data-aos="fade-up" data-aos-delay="200">Complete creative, production, and campaign solutions with professionalism and impact</p>
+  </div>
+</section>
+
+<!-- ALL SERVICES -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Graphic Design -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+          <h4>Graphic Design</h4>
+          <p class="mb-3">Professional design solutions that capture your brand essence.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> Brand Kits & Identity</li>
+            <li><i class="fas fa-check-circle"></i> Campaign Design</li>
+            <li><i class="fas fa-check-circle"></i> Posters, Flyers, Brochures</li>
+            <li><i class="fas fa-check-circle"></i> Corporate Branding</li>
+            <li><i class="fas fa-check-circle"></i> Social Media Posts</li>
+            <li><i class="fas fa-check-circle"></i> Carousel Designs</li>
+            <li><i class="fas fa-check-circle"></i> Ad Creatives (Meta/Google)</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Digital Campaigns -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
+          <h4>Social Media & Digital Campaigns</h4>
+          <p class="mb-3">Data-driven campaigns that drive engagement and conversions.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> Full Digital Marketing</li>
+            <li><i class="fas fa-check-circle"></i> Strategic Content Planning</li>
+            <li><i class="fas fa-check-circle"></i> Ad Management</li>
+            <li><i class="fas fa-check-circle"></i> Engagement-Driven Creatives</li>
+            <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+            <li><i class="fas fa-check-circle"></i> Analytics & Reporting</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Video Production -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-video"></i></div>
+          <h4>Video Production & Editing</h4>
+          <p class="mb-3">Cinematic quality videos that tell your story effectively.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> Promotional Videos</li>
+            <li><i class="fas fa-check-circle"></i> Corporate Videos</li>
+            <li><i class="fas fa-check-circle"></i> Event Highlights</li>
+            <li><i class="fas fa-check-circle"></i> Smooth Clean Editing</li>
+            <li><i class="fas fa-check-circle"></i> Post-Production</li>
+            <li><i class="fas fa-check-circle"></i> Motion Graphics</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Commercial Ads -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-film"></i></div>
+          <h4>Commercial Ads & Reels</h4>
+          <p class="mb-3">High-impact commercials and trend-focused content.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> Commercial Ad Production</li>
+            <li><i class="fas fa-check-circle"></i> Social Media Reels</li>
+            <li><i class="fas fa-check-circle"></i> Scriptwriting</li>
+            <li><i class="fas fa-check-circle"></i> Direction & Production</li>
+            <li><i class="fas fa-check-circle"></i> Casting & Location</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Outdoor Media -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-billboard"></i></div>
+          <h4>Outdoor Media & Rentals</h4>
+          <p class="mb-3">Maximum visibility with strategic outdoor placements.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> Billboards</li>
+            <li><i class="fas fa-check-circle"></i> Streamers & Pole Signs</li>
+            <li><i class="fas fa-check-circle"></i> Building Wraps</li>
+            <li><i class="fas fa-check-circle"></i> Campaign Placement</li>
+            <li><i class="fas fa-check-circle"></i> Nationwide Solutions</li>
+            <li><i class="fas fa-check-circle"></i> Installation & Management</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Print Media -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-print"></i></div>
+          <h4>Print Media Solutions</h4>
+          <p class="mb-3">Premium quality printing with nationwide delivery.</p>
+          <ul class="service-feature-list small">
+            <li><i class="fas fa-check-circle"></i> High-Quality Printing</li>
+            <li><i class="fas fa-check-circle"></i> Material Selection</li>
+            <li><i class="fas fa-check-circle"></i> Nationwide Delivery</li>
+            <li><i class="fas fa-check-circle"></i> Installation Services</li>
+            <li><i class="fas fa-check-circle"></i> Premium Finishing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP & WEB + 360 CAMPAIGNS -->
+<section class="py-5 bg-gold-soft">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>App & Website Development</h4>
+          <p class="mb-3">Custom digital solutions that drive business growth.</p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check-circle"></i> Corporate & Portfolio Websites</li>
+            <li><i class="fas fa-check-circle"></i> E-Commerce Solutions</li>
+            <li><i class="fas fa-check-circle"></i> Android & iOS Apps</li>
+            <li><i class="fas fa-check-circle"></i> Custom Business Solutions</li>
+            <li><i class="fas fa-check-circle"></i> UI/UX Design</li>
+            <li><i class="fas fa-check-circle"></i> Secure & Scalable Development</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h4>360° Brand Campaigns</h4>
+          <p class="mb-3">Complete end-to-end brand activation and management.</p>
+          <ul class="service-feature-list">
+            <li><i class="fas fa-check-circle"></i> Complete Branding Solutions</li>
+            <li><i class="fas fa-check-circle"></i> Outdoor Placement</li>
+            <li><i class="fas fa-check-circle"></i> Digital Posting & Management</li>
+            <li><i class="fas fa-check-circle"></i> Performance Reporting</li>
+            <li><i class="fas fa-check-circle"></i> Cross-Channel Integration</li>
+            <li><i class="fas fa-check-circle"></i> Campaign Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">flexible solutions</span>
+      <h2 class="section-title text-center d-inline-block">Service Packages</h2>
+      <p class="mt-3">Choose the perfect package for your business needs</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="package-card text-center">
+          <h4 class="fw-bold mb-3">Essential</h4>
+          <div class="package-price mb-3">Basic</div>
+          <p class="text-muted mb-4">Perfect for startups and small businesses</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Brand Kit Design</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Social Media Templates</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Basic Website (5 Pages)</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Monthly Content Calendar</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-gold w-100">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="package-card featured text-center">
+          <span class="package-badge">Most Popular</span>
+          <h4 class="fw-bold mb-3 mt-3">Professional</h4>
+          <div class="package-price mb-3">Premium</div>
+          <p class="text-muted mb-4">For growing brands seeking full visibility</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Complete Brand Identity</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Social Media Management</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> E-Commerce Website</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Video Production (2/month)</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Outdoor Media Planning</li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold w-100">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="package-card text-center">
+          <h4 class="fw-bold mb-3">Enterprise</h4>
+          <div class="package-price mb-3">Custom</div>
+          <p class="text-muted mb-4">Full-service solutions for established brands</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> 360° Brand Campaign</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Dedicated Account Manager</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Custom App Development</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Unlimited Video Content</li>
+            <li class="mb-2"><i class="fas fa-check text-gold me-2"></i> Nationwide Outdoor Campaign</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-gold w-100">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Not sure which service you need?</h2>
+    <p class="lead mb-4 opacity-75" data-aos="fade-up" data-aos-delay="100">Let's discuss your project and find the perfect solution</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" data-aos="fade-up" data-aos-delay="200">Schedule a consultation <i class="fas fa-calendar-alt ms-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-5"><a class="navbar-brand text-white" href="index.html">AVARE<span class="text-gold">MEDIA</span></a><p class="small mt-3 opacity-75">We craft powerful visuals — from digital design to outdoor media — that elevate your brand presence.</p></div>
+      <div class="col-md-3"><h5 class="fw-bold text-white">Quick Links</h5><ul class="list-unstyled small"><li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li><li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li><li><a href="work.html" class="text-white-50 text-decoration-none">Our Work</a></li><li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li></ul></div>
+      <div class="col-md-4"><h5 class="fw-bold text-white">Contact</h5><p><i class="fas fa-phone-alt text-gold me-2"></i> +92 334 9883999</p><p><i class="fas fa-envelope text-gold me-2"></i> avaremedia@gmail.com</p><div class="mt-3"><i class="fab fa-instagram me-3 fa-lg text-gold"></i><i class="fab fa-linkedin me-3 fa-lg text-gold"></i><i class="fab fa-facebook fa-lg text-gold"></i></div></div>
+    </div>
+    <hr class="mt-4 opacity-25">
+    <div class="text-center small opacity-50">© 2025 Avare Media — Elevate your brand. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true });</script>
+</body>
+</html>

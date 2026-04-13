@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Our Process | Avare Media - How We Work</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1e2b; }
+    :root { --primary-dark: #0a0c15; --primary-accent: #c2a144; --primary-accent-hover: #aa8a3a; --gray-bg: #f8f9fc; --card-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); }
+    h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; }
+    .section-title { position: relative; font-size: 2.2rem; font-weight: 800; margin-bottom: 1.2rem; }
+    .section-title:after { content: ''; display: block; width: 70px; height: 4px; background: var(--primary-accent); margin-top: 12px; border-radius: 4px; }
+    .text-gold { color: var(--primary-accent); }
+    .bg-gold-soft { background: rgba(194, 161, 68, 0.08); }
+    .btn-gold { background: var(--primary-accent); color: #0a0c15; font-weight: 600; padding: 0.7rem 1.8rem; border-radius: 40px; transition: all 0.2s ease; border: none; }
+    .btn-gold:hover { background: var(--primary-accent-hover); color: #ffffff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(194,161,68,0.2); }
+    .navbar { background: rgba(10, 12, 21, 0.96); backdrop-filter: blur(8px); padding: 1rem 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); z-index: 1030; }
+    .navbar-brand { font-weight: 800; font-size: 1.8rem; letter-spacing: -0.5px; color: white !important; }
+    .navbar-brand span { color: var(--primary-accent); }
+    .nav-link { color: #f0f0f0 !important; font-weight: 500; margin: 0 0.5rem; transition: 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-accent) !important; }
+    .page-header { background: linear-gradient(135deg, #0a0c15 0%, #1a1e2b 100%); padding: 120px 0 60px; color: white; }
+    .process-step-large { background: white; border-radius: 30px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: var(--card-shadow); position: relative; }
+    .step-number-large { width: 80px; height: 80px; background: var(--primary-accent); color: #0a0c15; font-weight: 800; font-size: 2.2rem; display: flex; align-items: center; justify-content: center; border-radius: 60px; margin-bottom: 1.5rem; }
+    .timeline-item { display: flex; gap: 2rem; margin-bottom: 3rem; }
+    .timeline-icon { width: 70px; height: 70px; background: var(--primary-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #0a0c15; flex-shrink: 0; }
+    .timeline-content { background: white; border-radius: 24px; padding: 2rem; box-shadow: var(--card-shadow); flex: 1; }
+    footer { background: #0a0c15; color: #ccc; padding: 3rem 0 2rem; }
+    
+    @media (max-width: 992px) {
+      .navbar-nav { background: rgba(10,12,21,0.96); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: 24px; margin-top: 0.5rem; }
+    }
+    @media (max-width: 768px) {
+      .section-title { font-size: 1.8rem; }
+      .page-header { padding: 100px 0 40px; }
+      .page-header h1 { font-size: 2.2rem; }
+      .timeline-item { flex-direction: column; gap: 1rem; }
+      .timeline-icon { width: 60px; height: 60px; font-size: 1.5rem; }
+    }
+    @media (max-width: 576px) {
+      .page-header h1 { font-size: 1.8rem; }
+      .process-step-large { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AVARE<span>MEDIA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="process.html">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <span class="text-gold fw-semibold" data-aos="fade-up">how we work</span>
+    <h1 class="display-4 fw-bold mt-3" data-aos="fade-up" data-aos-delay="100">Our Process</h1>
+    <p class="lead mt-3 opacity-75" data-aos="fade-up" data-aos-delay="200">We're proud to bring creative vision and strategic impact together</p>
+  </div>
+</section>
+
+<!-- PROCESS OVERVIEW -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title text-center d-inline-block">From Concept to Completion</h2>
+      <p class="mt-3">A structured approach that ensures every project delivers exceptional results</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3 col-6" data-aos="zoom-in">
+        <div class="text-center">
+          <div class="step-number-large mx-auto">1</div>
+          <h5 class="fw-bold">Discovery</h5>
+          <p class="small text-muted">Understand your brand, goals & audience</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="text-center">
+          <div class="step-number-large mx-auto">2</div>
+          <h5 class="fw-bold">Strategy & Creative</h5>
+          <p class="small text-muted">Concept design & storytelling approach</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="text-center">
+          <div class="step-number-large mx-auto">3</div>
+          <h5 class="fw-bold">Execution</h5>
+          <p class="small text-muted">Outdoor placement / digital posting</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="text-center">
+          <div class="step-number-large mx-auto">4</div>
+          <h5 class="fw-bold">Delivery & Analytics</h5>
+          <p class="small text-muted">Reporting + performance check</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED TIMELINE -->
+<section class="py-5 bg-gold-soft">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">step by step</span>
+      <h2 class="section-title text-center d-inline-block">How We Bring Ideas to Life</h2>
+    </div>
+    
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-icon"><i class="fas fa-search"></i></div>
+      <div class="timeline-content">
+        <h4 class="fw-bold mb-3">1. Discovery & Research</h4>
+        <p class="mb-3">We begin by diving deep into your brand, understanding your goals, target audience, and competitive landscape. This phase includes:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Brand audit and competitive analysis</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Target audience definition and research</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Goal setting and KPI establishment</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Project scope and timeline definition</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div>
+      <div class="timeline-content">
+        <h4 class="fw-bold mb-3">2. Strategy & Creative Development</h4>
+        <p class="mb-3">Our creative team develops concepts that align with your brand strategy and resonate with your audience:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Creative concept development</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Visual direction and mood boarding</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Content strategy and storytelling</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Campaign architecture planning</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-icon"><i class="fas fa-paint-brush"></i></div>
+      <div class="timeline-content">
+        <h4 class="fw-bold mb-3">3. Design & Production</h4>
+        <p class="mb-3">We bring concepts to life with meticulous attention to detail and quality:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Design execution across all mediums</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Video production and editing</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Print production and quality control</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Client review and feedback cycles</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+      <div class="timeline-content">
+        <h4 class="fw-bold mb-3">4. Launch & Execution</h4>
+        <p class="mb-3">Strategic deployment across all chosen channels with precision timing:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Outdoor media placement and installation</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Digital campaign launch and monitoring</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Social media content scheduling</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Real-time optimization</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-icon"><i class="fas fa-chart-bar"></i></div>
+      <div class="timeline-content">
+        <h4 class="fw-bold mb-3">5. Analysis & Optimization</h4>
+        <p class="mb-3">We measure, learn, and continuously improve for maximum impact:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Performance tracking and analytics</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Detailed reporting and insights</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Campaign optimization recommendations</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Long-term strategy refinement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS & TECHNOLOGY -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">powered by</span>
+      <h2 class="section-title text-center d-inline-block">Tools & Technology</h2>
+      <p class="mt-3">We use industry-leading tools to deliver exceptional quality</p>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6" data-aos="fade-up">
+        <div class="p-4 border rounded-4">
+          <i class="fab fa-adobe fs-1 text-gold mb-3"></i>
+          <h6 class="fw-bold">Adobe Creative Suite</h6>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 border rounded-4">
+          <i class="fab fa-figma fs-1 text-gold mb-3"></i>
+          <h6 class="fw-bold">Figma</h6>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 border rounded-4">
+          <i class="fas fa-chart-pie fs-1 text-gold mb-3"></i>
+          <h6 class="fw-bold">Google Analytics</h6>
+        </div>
+      </div>
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-4 border rounded-4">
+          <i class="fas fa-code fs-1 text-gold mb-3"></i>
+          <h6 class="fw-bold">VS Code / Development</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Ready to start your project?</h2>
+    <p class="lead mb-4 opacity-75" data-aos="fade-up" data-aos-delay="100">Let's follow our proven process to bring your vision to life</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" data-aos="fade-up" data-aos-delay="200">Start your project <i class="fas fa-arrow-right ms-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-5"><a class="navbar-brand text-white" href="index.html">AVARE<span class="text-gold">MEDIA</span></a><p class="small mt-3 opacity-75">We craft powerful visuals — from digital design to outdoor media — that elevate your brand presence.</p></div>
+      <div class="col-md-3"><h5 class="fw-bold text-white">Quick Links</h5><ul class="list-unstyled small"><li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li><li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li><li><a href="work.html" class="text-white-50 text-decoration-none">Our Work</a></li><li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li></ul></div>
+      <div class="col-md-4"><h5 class="fw-bold text-white">Contact</h5><p><i class="fas fa-phone-alt text-gold me-2"></i> +92 334 9883999</p><p><i class="fas fa-envelope text-gold me-2"></i> avaremedia@gmail.com</p><div class="mt-3"><i class="fab fa-instagram me-3 fa-lg text-gold"></i><i class="fab fa-linkedin me-3 fa-lg text-gold"></i><i class="fab fa-facebook fa-lg text-gold"></i></div></div>
+    </div>
+    <hr class="mt-4 opacity-25">
+    <div class="text-center small opacity-50">© 2025 Avare Media — Elevate your brand. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true });</script>
+</body>
+</html>

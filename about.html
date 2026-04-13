@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>About Avare Media | Premium Creative & Marketing Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1a1e2b; scroll-behavior: smooth; }
+    :root { --primary-dark: #0a0c15; --primary-accent: #c2a144; --primary-accent-hover: #aa8a3a; --gray-bg: #f8f9fc; --card-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); }
+    h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; }
+    .section-title { position: relative; font-size: 2.2rem; font-weight: 800; margin-bottom: 1.2rem; }
+    .section-title:after { content: ''; display: block; width: 70px; height: 4px; background: var(--primary-accent); margin-top: 12px; border-radius: 4px; }
+    .text-gold { color: var(--primary-accent); }
+    .bg-gold-soft { background: rgba(194, 161, 68, 0.08); }
+    .btn-gold { background: var(--primary-accent); color: #0a0c15; font-weight: 600; padding: 0.7rem 1.8rem; border-radius: 40px; transition: all 0.2s ease; border: none; }
+    .btn-gold:hover { background: var(--primary-accent-hover); color: #ffffff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(194,161,68,0.2); }
+    .navbar { background: rgba(10, 12, 21, 0.96); backdrop-filter: blur(8px); padding: 1rem 0; box-shadow: 0 5px 20px rgba(0,0,0,0.05); z-index: 1030; }
+    .navbar-brand { font-weight: 800; font-size: 1.8rem; letter-spacing: -0.5px; color: white !important; }
+    .navbar-brand span { color: var(--primary-accent); }
+    .nav-link { color: #f0f0f0 !important; font-weight: 500; margin: 0 0.5rem; transition: 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-accent) !important; }
+    .page-header { background: linear-gradient(135deg, #0a0c15 0%, #1a1e2b 100%); padding: 120px 0 60px; color: white; }
+    .stat-card { background: white; border-radius: 20px; padding: 2rem; text-align: center; box-shadow: var(--card-shadow); transition: transform 0.3s; }
+    .stat-card:hover { transform: translateY(-5px); }
+    .stat-number { font-size: 3rem; font-weight: 800; color: var(--primary-accent); }
+    .team-card { background: white; border-radius: 24px; overflow: hidden; box-shadow: var(--card-shadow); transition: transform 0.3s; }
+    .team-card:hover { transform: translateY(-8px); }
+    .team-card img { width: 100%; height: 280px; object-fit: cover; }
+    .value-card { background: white; border-radius: 20px; padding: 2rem; height: 100%; border: 1px solid #f0f0f0; transition: all 0.3s; }
+    .value-card:hover { border-color: var(--primary-accent); box-shadow: var(--card-shadow); }
+    .value-icon { font-size: 2.5rem; color: var(--primary-accent); margin-bottom: 1.5rem; }
+    footer { background: #0a0c15; color: #ccc; padding: 3rem 0 2rem; }
+    
+    @media (max-width: 992px) {
+      .navbar-nav { background: rgba(10,12,21,0.96); backdrop-filter: blur(8px); padding: 1.5rem; border-radius: 24px; margin-top: 0.5rem; }
+    }
+    @media (max-width: 768px) {
+      .section-title { font-size: 1.8rem; }
+      .page-header { padding: 100px 0 40px; }
+      .page-header h1 { font-size: 2.2rem; }
+      .stat-number { font-size: 2.5rem; }
+      .team-card img { height: 250px; }
+    }
+    @media (max-width: 576px) {
+      .page-header h1 { font-size: 1.8rem; }
+      .section-title:after { width: 50px; }
+      .stat-card { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AVARE<span>MEDIA</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <span class="text-gold fw-semibold" data-aos="fade-up">Get to know us</span>
+    <h1 class="display-4 fw-bold mt-3" data-aos="fade-up" data-aos-delay="100">About Avare Media</h1>
+    <p class="lead mt-3 opacity-75" data-aos="fade-up" data-aos-delay="200">Crafting powerful visuals and strategic campaigns that elevate brands</p>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="py-5">
+  <div class="container py-4">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Our Story" class="img-fluid rounded-4 shadow-lg">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="text-gold fw-semibold">OUR STORY</span>
+        <h2 class="section-title">From vision to reality — six years of creative excellence</h2>
+        <p class="mb-3">Founded with a passion for design and strategic communication, Avare Media has grown into a full-service creative agency trusted by leading brands across Pakistan.</p>
+        <p class="mb-4">We started as a small design studio and evolved into a comprehensive agency offering everything from graphic design and video production to outdoor media campaigns and digital solutions.</p>
+        <p>Today, we're proud to have delivered over 500 successful projects across 32+ cities, helping brands establish powerful visual identities and connect with their audiences meaningfully.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="py-5 bg-gold-soft">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-eye"></i></div>
+          <h3 class="fw-bold mb-3">Our Vision</h3>
+          <p class="mb-0">To elevate every brand's visibility through innovative design, strategic storytelling, and unmatched outdoor media presence. We envision becoming the most trusted creative partner for businesses seeking to make a lasting impact.</p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="value-card">
+          <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+          <h3 class="fw-bold mb-3">Our Mission</h3>
+          <p class="mb-0">Merge creativity with visibility. We empower businesses with designs, campaigns, and outdoor solutions that amplify their message and strengthen their identity. We grow when our clients grow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">what drives us</span>
+      <h2 class="section-title text-center d-inline-block">Our Core Values</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="value-card text-center">
+          <div class="value-icon"><i class="fas fa-palette"></i></div>
+          <h5 class="fw-bold">Creativity</h5>
+          <p class="small mb-0">We push boundaries with bold, innovative ideas that capture attention and inspire action.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="value-card text-center">
+          <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+          <h5 class="fw-bold">Integrity</h5>
+          <p class="small mb-0">Honest, transparent relationships with clients, partners, and team members.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="value-card text-center">
+          <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+          <h5 class="fw-bold">Innovation</h5>
+          <p class="small mb-0">Constantly evolving with trends and technology to deliver cutting-edge solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="value-card text-center">
+          <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+          <h5 class="fw-bold">Impact</h5>
+          <p class="small mb-0">Every project is measured by the tangible results it delivers for our clients.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-5 bg-gold-soft">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="stat-card">
+          <div class="stat-number">6+</div>
+          <p class="fw-semibold mb-0">Years of Excellence</p>
+          <small class="text-muted">Trusted creative partner</small>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-card">
+          <div class="stat-number">32</div>
+          <p class="fw-semibold mb-0">Cities Covered</p>
+          <small class="text-muted">Nationwide presence</small>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-card">
+          <div class="stat-number">500+</div>
+          <p class="fw-semibold mb-0">Projects Delivered</p>
+          <small class="text-muted">Successful campaigns</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">the people behind</span>
+      <h2 class="section-title text-center d-inline-block">Meet Our Team</h2>
+      <p class="mt-3">Creative minds dedicated to bringing your vision to life</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Member">
+          <div class="p-4">
+            <h5 class="fw-bold mb-1">Ahmed Khan</h5>
+            <p class="text-gold small fw-semibold mb-3">Creative Director</p>
+            <p class="small text-muted mb-0">15+ years in design and branding leadership.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Member">
+          <div class="p-4">
+            <h5 class="fw-bold mb-1">Sarah Ahmed</h5>
+            <p class="text-gold small fw-semibold mb-3">Head of Strategy</p>
+            <p class="small text-muted mb-0">Marketing strategist with global brand experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team Member">
+          <div class="p-4">
+            <h5 class="fw-bold mb-1">Omar Farooq</h5>
+            <p class="text-gold small fw-semibold mb-3">Production Lead</p>
+            <p class="small text-muted mb-0">Video production and outdoor media specialist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Ready to work with us?</h2>
+    <p class="lead mb-4 opacity-75" data-aos="fade-up" data-aos-delay="100">Let's create something extraordinary together</p>
+    <a href="contact.html" class="btn btn-gold btn-lg" data-aos="fade-up" data-aos-delay="200">Get in touch <i class="fas fa-arrow-right ms-2"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-5"><a class="navbar-brand text-white" href="index.html">AVARE<span class="text-gold">MEDIA</span></a><p class="small mt-3 opacity-75">We craft powerful visuals — from digital design to outdoor media — that elevate your brand presence.</p></div>
+      <div class="col-md-3"><h5 class="fw-bold text-white">Quick Links</h5><ul class="list-unstyled small"><li><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li><li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li><li><a href="work.html" class="text-white-50 text-decoration-none">Our Work</a></li><li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li></ul></div>
+      <div class="col-md-4"><h5 class="fw-bold text-white">Contact</h5><p><i class="fas fa-phone-alt text-gold me-2"></i> +92 334 9883999</p><p><i class="fas fa-envelope text-gold me-2"></i> avaremedia@gmail.com</p><div class="mt-3"><i class="fab fa-instagram me-3 fa-lg text-gold"></i><i class="fab fa-linkedin me-3 fa-lg text-gold"></i><i class="fab fa-facebook fa-lg text-gold"></i></div></div>
+    </div>
+    <hr class="mt-4 opacity-25">
+    <div class="text-center small opacity-50">© 2025 Avare Media — Elevate your brand. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true });</script>
+</body>
+</html>
