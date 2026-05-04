@@ -6,7 +6,7 @@
   <title>Avare Media | Premium Creative & Marketing Agency – Design, Campaigns, Outdoor Media</title>
   <!-- Bootstrap 5 CSS + Icons + Google Fonts + Swiper Slider + AOS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -83,6 +83,31 @@
     @media (max-width: 768px) {
       .section-title { font-size: 1.8rem; }
     }
+
+    .gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 260px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* THIS FIXES SIZE */
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.12);
+}
   </style>
 </head>
 <body>
@@ -132,31 +157,198 @@
 <!-- SERVICES - Expanded with all details from brief -->
 <section id="services" class="py-5 bg-gold-soft">
   <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up"><span class="text-gold fw-semibold">what we deliver</span><h2 class="section-title text-center" style="display: inline-block;">Our Services</h2><p class="mt-2">Complete creative, production, and campaign solutions with professionalism and impact.</p></div>
+
+    <!-- Heading -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">what we deliver</span>
+      <h2 class="section-title text-center" style="display: inline-block;">Our Services</h2>
+      <p class="mt-2">
+        We craft powerful visuals — from digital design to outdoor media — that elevate your brand presence.
+        <br>
+        Our team delivers complete creative, production, and campaign solutions with professionalism and impact.
+      </p>
+    </div>
+
     <div class="row g-4">
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-pen-fancy"></i></div><h4>Graphic Design</h4><p><strong>Brand Kits · Campaign Design · Posters, Flyers, Brochures · Corporate Branding · Social Media Posts · Carousel Designs · Ad Creatives (Meta/Google).</strong></p></div></div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-chart-simple"></i></div><h4>Social Media & Digital Campaigns</h4><p>Full digital marketing campaigns, strategic content, ad management, engagement-driven creatives, and performance optimization.</p></div></div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-video"></i></div><h4>Video Production & Editing</h4><p>Promotional videos, corporate videos, event highlights, smooth clean editing, post-production, and motion graphics.</p></div></div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-film"></i></div><h4>Commercial Ads & Reels</h4><p>High-impact commercial ads, trend-focused social media reels, scriptwriting + direction, and production management.</p></div></div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-billboard"></i></div><h4>Outdoor Media & Rentals</h4><p>Billboards, streamers, pole signs, building wraps, campaign placement & management, nationwide outdoor solutions.</p></div></div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-print"></i></div><h4>Print Media Solutions</h4><p>High-quality printing, material selection guidance, nationwide delivery & installation, premium finishing.</p></div></div>
-      <div class="col-lg-6 col-md-12" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-mobile-alt"></i></div><h4>App & Website Development</h4><p>Corporate, portfolio & e-commerce websites. Android & iOS mobile applications, custom business solutions with UI/UX, secure, scalable & performance-driven development.</p></div></div>
-      <div class="col-lg-6 col-md-12" data-aos="fade-up"><div class="service-card"><div class="service-icon"><i class="fas fa-chalkboard-user"></i></div><h4>360° Brand Campaigns</h4><p>Complete end-to-end branding, outdoor placement, digital posting, reporting + performance check, cross-channel integration.</p></div></div>
+
+      <!-- 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h4>360° Brand Campaigns</h4>
+          <p>
+            <i class="fas fa-bullhorn"></i> Core DOOH / Outdoor Services <br>
+            <i class="fas fa-bolt"></i> Real-Time DOOH Activation <br>
+            <i class="fas fa-pen-ruler"></i> Creative + Execution <br>
+            <i class="fas fa-chart-line"></i> Performance & Analytics Focus <br>
+            <i class="fas fa-briefcase"></i> Business Value Angle
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h4>App & Website Development</h4>
+          <p>
+            <i class="fas fa-globe"></i> Corporate, Portfolio & E-commerce Websites <br>
+            <i class="fab fa-android"></i> Android & iOS Mobile Applications <br>
+            <i class="fas fa-layer-group"></i> Custom Business Solutions with UI/UX <br>
+            <i class="fas fa-shield-halved"></i> Secure, Scalable Development <br>
+            <i class="fas fa-gauge-high"></i> Performance-Driven Systems
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-billboard"></i></div>
+          <h4>Outdoor Media & Rentals</h4>
+          <p>
+            <i class="fas fa-tv"></i> Billboards <br>
+            <i class="fas fa-flag"></i> Streamers <br>
+            <i class="fas fa-map-signs"></i> Pole Signs <br>
+            <i class="fas fa-building"></i> Building Wraps <br>
+            <i class="fas fa-location-dot"></i> Campaign Placement & Management
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-print"></i></div>
+          <h4>Print Media Solutions</h4>
+          <p>
+            <i class="fas fa-print"></i> High-Quality Printing <br>
+            <i class="fas fa-palette"></i> Material Selection Guidance <br>
+            <i class="fas fa-truck"></i> Nationwide Delivery <br>
+            <i class="fas fa-tools"></i> Installation Services
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-film"></i></div>
+          <h4>Commercial Ads & Reels</h4>
+          <p>
+            <i class="fas fa-star"></i> High-Impact Commercial Ads <br>
+            <i class="fas fa-fire"></i> Trend-Focused Social Media Reels <br>
+            <i class="fas fa-pen-nib"></i> Scriptwriting <br>
+            <i class="fas fa-video"></i> Direction & Production
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chart-simple"></i></div>
+          <h4>Social Media & Digital Campaigns</h4>
+          <p>
+            <i class="fas fa-hashtag"></i> Social Media Posts <br>
+            <i class="fas fa-images"></i> Carousel Designs <br>
+            <i class="fas fa-ad"></i> Ad Creatives (Meta/Google) <br>
+            <i class="fas fa-bullseye"></i> Full Digital Campaigns
+          </p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-video"></i></div>
+          <h4>Video Production & Editing</h4>
+          <p>
+            <i class="fas fa-clapperboard"></i> Promotional Videos <br>
+            <i class="fas fa-building"></i> Corporate Videos <br>
+            <i class="fas fa-calendar-check"></i> Event Highlights <br>
+            <i class="fas fa-scissors"></i> Smooth Editing
+          </p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+          <h4>Graphic Design</h4>
+          <p>
+            <i class="fas fa-box"></i> Brand Kits <br>
+            <i class="fas fa-lightbulb"></i> Campaign Design <br>
+            <i class="fas fa-file-lines"></i> Posters, Flyers, Brochures <br>
+            <i class="fas fa-building-columns"></i> Corporate Branding
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
 <section id="process" class="py-5">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up"><span class="text-gold fw-semibold">how we work</span><h2 class="section-title text-center" style="display: inline-block;">Our Process</h2><p>We're proud to bring creative vision and strategic impact together.</p></div>
-    <div class="row"><div class="col-md-3 col-sm-6 process-step" data-aos="zoom-in"><div class="step-number">1</div><h5>Discovery</h5><p>Understand your brand, goals & audience</p></div>
-    <div class="col-md-3 col-sm-6 process-step" data-aos="zoom-in" data-aos-delay="100"><div class="step-number">2</div><h5>Strategy & Creative</h5><p>Concept design & storytelling approach</p></div>
-    <div class="col-md-3 col-sm-6 process-step" data-aos="zoom-in" data-aos-delay="200"><div class="step-number">3</div><h5>Execution</h5><p>Outdoor placement / digital posting</p></div>
-    <div class="col-md-3 col-sm-6 process-step" data-aos="zoom-in" data-aos-delay="300"><div class="step-number">4</div><h5>Delivery & Analytics</h5><p>Reporting + performance check</p></div></div>
-  </div>
-</section>
 
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">how we work</span>
+      <h2 class="section-title text-center" style="display: inline-block;">Our Process</h2>
+      <p>
+        We’re proud to bring creative vision and strategic impact together.
+        <br>
+        Let’s elevate your brand with designs and campaigns that stand out.
+      </p>
+    </div>
+
+    <!-- STEPS -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- 1 -->
+      <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 process-step" data-aos="zoom-in">
+        <div class="step-number">1</div>
+        <h5>Briefing</h5>
+        <p>Understand your brand & campaign goals</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 process-step" data-aos="zoom-in" data-aos-delay="100">
+        <div class="step-number">2</div>
+        <h5>Concept Creation</h5>
+        <p>Design + Creative Direction</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 process-step" data-aos="zoom-in" data-aos-delay="200">
+        <div class="step-number">3</div>
+        <h5>Approval</h5>
+        <p>Revisions + Finalization</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 process-step" data-aos="zoom-in" data-aos-delay="300">
+        <div class="step-number">4</div>
+        <h5>Execution</h5>
+        <p>Outdoor placement / digital posting</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 process-step" data-aos="zoom-in" data-aos-delay="400">
+        <div class="step-number">5</div>
+        <h5>Delivery</h5>
+        <p>Reporting + performance check</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <!-- CASE STUDIES - Full detailed from original content -->
 <section id="work" class="py-5 bg-light">
   <div class="container">
@@ -191,22 +383,196 @@
 <section class="py-5 bg-gold-soft">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6" data-aos="fade-right"><span class="text-gold fw-semibold">why avare media</span><h2 class="section-title">We bring creative vision and strategic impact together</h2><p class="mb-3">We're proud to merge design excellence, outdoor execution, and storytelling that delivers measurable results.</p><ul class="list-unstyled"><li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Bold, modern ideas that stand out</li><li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Transparent, reliable & quality-focused</li><li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Tailored solutions for each brand</li><li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Every design & placement delivers results</li><li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> We grow when our clients grow</li></ul><div class="row mt-4 text-center"><div class="col-4"><h3 class="text-gold">6+</h3><p>Years Excellence</p></div><div class="col-4"><h3 class="text-gold">32</h3><p>Cities Covered</p></div><div class="col-4"><h3 class="text-gold">500+</h3><p>Projects Delivered</p></div></div></div>
-      <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Strategy meeting" class="img-fluid rounded-4 shadow-lg"></div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="text-gold fw-semibold">why avare media</span>
+        <h2 class="section-title">We bring creative vision and strategic impact together</h2>
+        <p class="mb-3">We're proud to merge design excellence, outdoor execution, and storytelling that delivers measurable results.</p>
+
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> A complete design-to-display solution</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Expert creative direction</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Access to premium outdoor locations</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Clean, modern, high-impact visuals</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Fast turnaround & reliable delivery</li>
+          <li class="mb-2"><i class="fas fa-check-circle text-gold me-2"></i> Dedicated customer experience</li>
+        </ul>
+
+        <div class="row mt-4 text-center">
+          <div class="col-4">
+            <h3 class="text-gold">6+</h3>
+            <p>Years Excellence</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-gold">32</h3>
+            <p>Cities Covered</p>
+          </div>
+          <div class="col-4">
+            <h3 class="text-gold">500+</h3>
+            <p>Projects Delivered</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+             alt="Strategy meeting" 
+             class="img-fluid rounded-4 shadow-lg">
+      </div>
     </div>
+  </div>
+</section>
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">case study breakdown</span>
+      <h2 class="section-title text-center" style="display:inline-block;">OUR ROLE</h2>
+      <p class="mt-2">
+        End-to-end execution of a complete 360° branding and campaign solution for a premium real estate exhibition.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="row g-4">
+
+      <!-- Box 1 -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="service-card h-100">
+          <div class="service-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h4>Strategy & Planning</h4>
+          <p>
+            We delivered a full 360° branding and campaign solution, handling everything from creative design to digital promotion and on-ground execution.
+            <br><br>
+            A clear roadmap was developed to ensure maximum visibility, strong engagement, and premium brand positioning.
+          </p>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="service-card h-100">
+          <div class="service-icon">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <h4>Creative Development</h4>
+          <p>
+            Our team created a strong and consistent visual language that reflected the premium nature of the real estate industry.
+            <br><br>
+            Every touchpoint — from social media to on-ground branding — was carefully designed to enhance credibility and attract serious buyers and investors.
+          </p>
+        </div>
+      </div>
+
+      <!-- Execution full width -->
+      <div class="col-12" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h4>EXECUTION</h4>
+          <p>
+            The campaign was executed across multiple channels with precision and consistency.  
+            From digital promotion to physical branding installations, every element was managed to ensure maximum visibility, engagement, and audience impact.
+          </p>
+        </div>
+      </div>
+
+      <!-- Results full width -->
+      <div class="col-12" data-aos="fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4>RESULTS</h4>
+          <p>
+            The campaign generated strong awareness, high visitor engagement, and a professional exhibition environment.
+            It successfully helped exhibitors connect with their target audience and significantly strengthened brand presence in the market.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
 <!-- EXTRA: WHAT WE DO - detailed list from original brief -->
 <section class="py-5">
   <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="text-gold fw-semibold">our visuals</span>
+      <h2 class="section-title text-center" style="display:inline-block;">Our Work Gallery</h2>
+      <p class="mt-2">A glimpse of our creative executions, campaigns, and visual excellence.</p>
+    </div>
+
     <div class="row g-4">
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-palette fs-1 text-gold mb-3"></i><h5>Graphic Design & Branding</h5><p>Brand kits, campaign design, posters, flyers, brochures, corporate branding, social media posts, carousel designs, ad creatives (Meta/Google).</p></div></div>
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-chart-line fs-1 text-gold mb-3"></i><h5>Digital Campaigns</h5><p>Full digital marketing campaigns, social media strategy, performance marketing, and engagement-driven content.</p></div></div>
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-video fs-1 text-gold mb-3"></i><h5>Video & Commercials</h5><p>Promotional videos, corporate videos, event highlights, commercial ads, reels, scriptwriting + direction.</p></div></div>
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-billboard fs-1 text-gold mb-3"></i><h5>Outdoor Media & Rentals</h5><p>Billboards, streamers, pole signs, building wraps, campaign placement & management, nationwide outdoor solutions.</p></div></div>
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-print fs-1 text-gold mb-3"></i><h5>Print Media Solutions</h5><p>High-quality printing, material selection guidance, nationwide delivery & installation, premium finishing.</p></div></div>
-      <div class="col-md-4"><div class="p-4 border rounded-4 h-100"><i class="fas fa-code fs-1 text-gold mb-3"></i><h5>App & Web Development</h5><p>Corporate, portfolio & e-commerce websites. Android & iOS apps, custom business solutions with UI/UX.</p></div></div>
+
+      <!-- IMAGE ITEM -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image1.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image2.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image3.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image4.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image5.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image6.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image7.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image8.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image9.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+        <div class="gallery-card">
+          <img src="./image10.jpeg" alt="">
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
